@@ -1,0 +1,285 @@
+/**
+ * GENERAL
+ */
+ html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+img{
+	max-width:100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+body {
+	font-size: 100%;
+	font-family: 'Trebuchet MS', Verdana, serif;
+	background-color:#e4e8f1;
+}
+   
+  
+   /*main*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50% ;
+    gap: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.first h2, .second h2, .fifth h2{
+    color: white;
+    font-size: 1.05em;
+    line-height: 1.3em;
+}
+
+.authorinfo div:last-of-type{
+    position: absolute;
+}
+.grid-container div{
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+   
+}   
+.authorinfo p{
+   font-size: 0.7em;
+   margin: 0 2.6rem 0;
+}
+.authorinfo h3{
+    font-size: 0.9em;
+    margin: 0 2.6rem 0;
+    padding-bottom: 0.1em;
+}
+.authorinfo{
+    position: relative;
+}
+.grid-container > div > p:nth-child(3){
+    line-height: 1.3em;
+    font-size: 88%;
+}
+
+
+             /*first*/
+.first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #733fc8;
+    padding: 1.5em;
+}
+.first h3{
+    color: #e8d8f0;
+}
+.first .authorinfo p{
+    color: #b698d4;
+}
+.first p{
+    color: #af86e9;
+}
+.first h2{
+    color:#f0e9f2;
+    position: relative;
+     z-index: 2;
+}
+.first .author1{
+    background: url('../images/image-daniel.jpg') center center no-repeat;
+    width: 2em;
+    height: 2em;
+    border-radius: 1.5em;
+    background-size: contain;
+    border: 1.5px solid #9f7adb;
+}
+.authorinfo img{
+    position: absolute;
+    left: 70%;
+    top: -1em;
+}
+
+
+              /*second*/
+.second{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #49556b;
+    padding: 1.5em;
+}
+.second .author2{
+    background: url('../images/image-jonathan.jpg') center center no-repeat;
+    background-size: auto;
+    width: 2em;
+    height: 2em;
+    border-radius: 1.5em;
+    background-size: contain;
+    border: 1.5px solid #727d93;
+}
+.second .authorinfo h3{
+    color: #c7cbd0;
+}
+.second .authorinfo p{
+    color:#8995a5;
+}
+.second > p{
+    color: #99a2b2;
+}
+        
+              /*third*/
+.third{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 1.5em;
+    background-color: white;
+}
+.third .author3{
+    background: url('../images/image-kira.jpg') center center no-repeat;
+    background-size: auto;
+    width: 2em;
+    height: 2em;
+    border-radius: 1.5em;
+    background-size: contain;
+    border: 1.5px solid #a9b4c9;
+}
+.third .authorinfo h3{
+    color:#45464a ;
+}
+.third .authorinfo p{
+    color: #424343bf;
+}
+.third h2{
+    font-size: 1.05em;
+    line-height: 1.3em;
+    color: #5f6773;
+    
+}
+.third >p{
+    color:#535557;
+    line-height: 1.4em;
+}
+
+     /*fourth*/
+.fourth{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 1.5em;
+    background-color: white;
+}
+.fourth .author4{
+    background: url('../images/image-jeanette.jpg') center center no-repeat;
+    background-size: auto;
+    width: 2em;
+    height: 2em;
+    border-radius: 1.5em;
+    background-size: contain;
+    border: 1.5px solid #9aa1b0;
+}
+.fourth h2{
+    font-size: 1.05em;
+    line-height: 1.3em;
+    color: #5f6773;
+}
+.fourth >p{
+    color:#535557;
+    line-height: 1.4em;
+}
+.fourth .authorinfo h3{
+    color:#45464a ;
+}
+.fourth .authorinfo p{
+    color: #424343bf;
+}
+        
+    /*fifth*/
+.fifth{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #18202d;
+    padding: 1.5em;
+        }
+ .fifth .author5{
+    background: url('../images/image-patrick.jpg') center center no-repeat;
+    background-size: auto;
+    width: 2em;
+    height: 2em;
+    border-radius: 1.5em;
+    background-size: contain;
+    border: 1.5px solid #727d93;
+ }   
+ .fifth h2{
+    font-size: 1.05em;
+    line-height: 1.3em;
+    color: #c3c7d3;
+}
+
+
+.fifth >p{
+    color:#99a2b2;
+    line-height: 1.4em;
+}
+.fifth .authorinfo h3{ 
+     
+        color: #8c8c8cbf;
+    }
+    .ffifth >p{
+        color:#535557;
+        line-height: 1.4em;
+    }
+    .fifth .authorinfo h3{
+        color:#d3d6d8;
+    }
+    .fifth .authorinfo p{
+        color: #8c8c8cbf;
+    } 
+
+.fifth .authorinfo p{
+    color: #424343bf;
+}
+ 
+ /*media queries*/
+@media ( max-width:1187px){
+   .first, .second, .third, .fourth, .fifth{padding: 1.3em;}
+}
+@media ( max-width:1159px){
+    .first, .second, .third, .fourth, .fifth{padding: 1.1em;}
+ }
+ @media ( max-width:1131px){
+    .first, .second, .third, .fourth, .fifth{padding: .7em;}
+ }
+ @media ( max-width:1073px){
+    .first, .second, .third, .fourth, .fifth{padding: .5em;}
+    
+    .authorinfo img {top: 1em;}
+    
+    .authorinfo h3,
+    .authorinfo p {margin: 0 2.2rem 0;}
+ }
+  @media ( max-width:1023px){
+    .grid-container div{ justify-content: initial;}
+    .first, .second, .third, .fourth, .fifth{padding: .7em;}
+    .authorinfo h3, .authorinfo p{margin-right: 0em;}
+ }
+ @media ( max-width:900px){
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;                                             
+    }
+    .first, .second, .third, .fourth, .fifth{padding: 1.7em;}
+    .third{order:5;} 
+ }
+ @media ( max-width:350px){
+    .authorinfo img {
+        left: 65%;}
+ }
